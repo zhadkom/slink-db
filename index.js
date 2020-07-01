@@ -8,4 +8,6 @@ app.get('/', (req, res) => {
   res.send('This is slink db 🔏')
 })
 
-app.listen(port)
+app.listen(port, () => {
+  console.log(`App listen on port: ${port}`)
+})
